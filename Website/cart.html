@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopping</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="product-page">
+            <h1 class="mt-4">Products</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <!-- product 1 -->
+                        <div class="product">
+                            <img src="" alt="Iphone 13" class="img-fluid">
+                            <h3>Iphone 13</h3>
+                            <p>Price: $20</p>
+                            <button class="btn btn-primary" onclick="addToCart('Iphone 13', 20, 1)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="col-lg-4 col-md-6">
+                        <!-- product 2 -->
+                        <div class="product">
+                            <img src="" alt="Iphone 14" class="img-fluid">
+                            <h3>Iphone 14</h3>
+                            <p>Price: $40</p>
+                            <button class="btn btn-primary" onclick="addToCart('Iphone 14', 40, 2)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="col-lg-4 col-md-6">
+                        <!-- product 3 -->
+                        <div class="product">
+                            <img src="" alt="Iphone 14 Pro" class="img-fluid">
+                            <h3>Iphone 14 Pro</h3>
+                            <p>Price: $50</p>
+                            <button class="btn btn-primary" onclick="addToCart('Iphone 14 Pro', 50, 3)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-icon">
+                <button class="btn btn-primary" onclick="showCart()">
+                <i class="fas fa-shopping-cart"></i>Cart</button>
+                </div>
+            </div>
+        </div>
+        <div id="cart-page" style="display: none;">
+            <h1>Cart</h1>
+            <button id="home-icon" onclick="goToProductPage()">
+                <i class="fas fa-home"></i>Home</button>
+            
+            <div id="cart-items"></div>
+        </div>
+        <div id="cart-icon" style="display: none;">
+            <a href="#" onclick="showCart()">
+        </a></div>
+        <script src="script.js"></script>
+    </body>
+</html>
+
